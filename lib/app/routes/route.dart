@@ -10,15 +10,15 @@ abstract class Routes {
   static const Camera = '/camera';
   static const Login = '/login';
   static const Post = '/post';
-  static const result = '/result';
+  static const Result = '/result';
 }
 
 class Pages {
   static final routes = [
     GetPage(name: Routes.Home, page: () => HomePage()),
-    GetPage(name: Routes.Home, page: () => UseCamera()),
-    GetPage(name: Routes.Home, page: () => LoginPage()),
-    GetPage(name: Routes.Home, page: () => PostImgPage()),
-    GetPage(name: Routes.Home, page: () => ResultPage()),
+    GetPage(name: Routes.Camera, page: () => UseCamera()),
+    GetPage(name: Routes.Login, page: () => LoginPage()),
+    GetPage(name: Routes.Post, page: () => PostImgPage()),
+    GetPage(name: Routes.Result, page: () => ResultPage()),
   ];
 }
